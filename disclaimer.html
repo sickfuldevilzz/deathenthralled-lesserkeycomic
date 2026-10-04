@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>here be dragons</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+          <link rel="icon" type="image/x-icon" href="favicon.ico/heart.png">
+
+      <style>
+      body {
+        border-radius: 700px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+    position: absolute;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+		background-image: url("fog.png");
+		background-color: black;
+		background-size: cover;
+    background-attachment: fixed;
+      }
+      
+      
+
+
+
+ 
+ 
+ 
+      
+      .box 
+      {
+        background-color: #000;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding: 50px;
+     border-radius: 10px;
+border-right: 6px dotted  #afafaf;
+  border-left: 6px dotted  #afafaf;
+      }
+      
+      .hide {
+  display: none;
+}
+
+.myDIV {
+  font-family: Courier;
+  color: #000;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: #737373;
+}
+      
+      .computer 
+      {
+          border-radius: 50px;
+          background-color: #000;
+      }
+      
+      
+      .crt::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+@keyframes flicker {
+  0% {
+  opacity: 0.27861;
+  }
+  5% {
+  opacity: 0.34769;
+  }
+  10% {
+  opacity: 0.23604;
+  }
+  15% {
+  opacity: 0.10626;
+  }
+  20% {
+  opacity: 0.18128;
+  }
+  25% {
+  opacity: 0.10626;
+  }
+  30% {
+  opacity: 0.18128;
+  }
+  35% {
+  opacity: 0.23604;
+  }
+}
+
+h1 {
+    font-family: "VHS Mono";
+    color: #d9d9d9;
+}
+  
+       @font-face {
+       font-family: "VHS Mono";
+     src: url("comics/sillybillyfonts/homevideo.ttf");
+     }
+     
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+      
+      
+        p {
+        text-align: center;
+    font-family: "Courier", monospace;
+    color: #d9d9d9;
+    line-height: 20px;
+  }
+  
+    li {
+        text-align: justify;
+    font-family: "Modern DOSS";
+    color: #ff0000;
+  }
+  
+  button {
+    background: black;
+          color: #ba3030;
+      text-decoration: none;
+      font-family: "VHS Mono";
+      width: 100px;
+}
+
+button:hover {
+      background: black;
+       color: #ff8282;
+      text-decoration: line-through;
+}
+
+button:visited {
+     background: black;
+       color: #ff8282;
+      text-decoration: line-through;
+}
+
+
+
+@font-face {
+  font-family: Modern DOSS;
+  src: url("comics/sillybillyfonts/moderndoss.ttf");
+  }
+  </style>
+  </head>
+  <body>
+        <script>
+function myComic() {
+  window.open("comics_01.html");
+}
+  </script>
+  
+         <script>
+function GobackGo() {
+  window.open("descent.html");
+}
+  </script>
+ 
+<div class="crt">
+  <div class="box">
+
+    <h1>DISCLAIMER</h1>
+    <p>This comic contains distressing topics not suitable for younger audiences such as:</p>
+    <ol>
+    <li>Graphic Depictions of Violence</li>
+    <li>Discussions of Mental Illness</li>
+    <li>Sucidial Ideation</li>
+    <li>Adult Language and Profanity</li>
+    <li>Depictions of Drug and Substance Use</li>
+<div class="myDIV">...and a strong urge to embrace the Shadows.</div>
+<div class="hide">There's nothing there. Nothing to worry about.</div>
+
+    </ol>
+    <p>Viewer Discretion is Advised.</p>
+    <center>
+    <button onclick="myComic()">I Understand and Wish to Proceed</button>
+    </center>
+  </div>
+</div>
+  </body>
+</html>
