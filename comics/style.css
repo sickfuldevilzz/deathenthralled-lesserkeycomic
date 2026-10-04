@@ -1,0 +1,27 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+  HTML content. To learn how to do something, just try searching Google for questions like
+  "how to change link color." */
+
+.roadmics,
+
+body {
+  background-image: url("snickerthesneacker/nggghsnowrain.png");;background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'JMH Typewriter', serif;
+  text-align: center;
+  font-size: 30px;
+  color: #241e1e;
+      }
+            
+    main {
+      background-color: #4f4343;
+      flex: 1;
+      padding: 20px;
+      order: 2;
+      margin: auto;
+      width: 800px;
+      height: 800px;
+            }
+            
